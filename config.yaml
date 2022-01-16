@@ -1,0 +1,18 @@
+Create:
+  input_data:
+    - Data/COVID
+    - Data/NORMAL
+  output_folder: 
+    - Data/trainingData/
+  transforms: skeleton # watershed , skeleton , dilate eroze , normal
+  image_resolution: 256
+
+Train:
+  input_data:
+    - Data/trainingData/
+  output_folder: 
+    - Models
+  epochs : 5
+  image_resolution: 256
+  batch_size: 64
+  transforms: skeleton # watershed , skeleton , dilate eroze
