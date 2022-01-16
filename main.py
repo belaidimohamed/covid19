@@ -8,7 +8,7 @@ class one(QDialog):
         super().__init__()
         self.fname = None
         self.setWindowTitle('Covid19 Detector')
-        self.setWindowIcon(QIcon('detective1.png'))# put here window icon (full path)
+        self.setWindowIcon(QIcon('detective1.png'))
         self.setGeometry(350,100,500,240)
         self.initwindow()
         self.show()
