@@ -22,7 +22,7 @@ class Trainer():
   
   def run(self) :
     self.splitData() # put numpy data into tensors and flaten them
-    self.train(config['batch_size'],config['epochs'])     # train the stupid model
+    self.train(config['batch_size'],config['epochs'])     # train the model
     self.test()      # put the model into a test 
 
 
